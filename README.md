@@ -1,5 +1,5 @@
-# A-Star-Pathfinding
-An efficient A* (A-Star) pathfinding algorithm implemented in Python.
+# A-Star-Search
+An efficient A* (A-Star) searching algorithm implemented in Python.
 
 A* algorithm is like an ‘upgrade’ of Dijkstra’s algorithm. It calculates not only the cost on the route, but also the “heuristic”, the expected cost to the goal.
 
@@ -9,7 +9,7 @@ It searches a way smaller area than Dijkstra does, when the location of the goal
 
 There are three examples with pictures. The code was attached and included in the package.
 
-Implementation example:
+Sample input:
 
 ```python
 
@@ -35,3 +35,41 @@ print()
 draw_grid(gamemap, width=3, path=reconstruct_path(parent_node, start=(0, 4), goal=(9, 4)))
 
 ```
+Sample output:
+
+```python
+
+.  .  .  .  .  .  .  .  .  .  
+↓  ↓  ↓  ↓  ↓  .  .  .  .  .  
+↓  ↓  ↓  ↓  ↓  ←  ↓  ↓  ↓  ↓  
+↓  ↓  ←  ←  ←  ←  ←  ←  ←  ←  
+S  ←  ######↑  ←  ←  ←  ←  G  
+↑  ↑  ######↑  ←  ↑  ↑  ↑  .  
+↑  ↑  ######↑  .  .  .  .  .  
+↑  ↑  .  .  .  .  .  .  .  .  
+.  .  .  .  .  .  .  .  .  .  
+.  .  .  .  .  .  .  .  .  .  
+
+.  .  .  .  .  .  .  .  .  .  
+3  4  5  6  7  .  .  .  .  .  
+2  3  4  5  6  8  9  12 12 13 
+1  2  3  4  5  7  8  10 11 12 
+S  1  ######6  8  9  11 12 G  
+1  2  ######7  9  10 13 13 .  
+2  3  ######8  .  .  .  .  .  
+3  4  .  .  .  .  .  .  .  .  
+.  .  .  .  .  .  .  .  .  .  
+.  .  .  .  .  .  .  .  .  .  
+
+.  .  .  .  .  .  .  .  .  .  
+.  .  .  .  .  .  .  .  .  .  
+.  .  .  .  .  .  .  .  .  .  
+.  @  @  @  @  .  .  .  .  .  
+@  @  ######@  @  @  @  @  @  
+.  .  ######.  .  .  .  .  .  
+.  .  ######.  .  .  .  .  .  
+.  .  .  .  .  .  .  .  .  .  
+.  .  .  .  .  .  .  .  .  .  
+.  .  .  .  .  .  .  .  .  . 
+```
+
