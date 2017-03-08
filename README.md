@@ -37,8 +37,6 @@ draw_grid(gamemap, width=3, path=reconstruct_path(parent_node, start=(0, 4), goa
 ```
 Sample output:
 
-```python
-
 .  .  .  .  .  .  .  .  .  .  
 ↓  ↓  ↓  ↓  ↓  .  .  .  .  .  
 ↓  ↓  ↓  ↓  ↓  ←  ↓  ↓  ↓  ↓  
@@ -71,5 +69,4 @@ S  1  ######6  8  9  11 12 G
 .  .  .  .  .  .  .  .  .  .  
 .  .  .  .  .  .  .  .  .  .  
 .  .  .  .  .  .  .  .  .  . 
-```
 
