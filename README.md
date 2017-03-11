@@ -36,9 +36,9 @@ draw_grid(gamemap, width=3, path=reconstruct_path(parent_node, start=(0, 4), goa
 
 ```
 Sample output:
-"#" represents mountains
-"S" represents Start
-"G" represents Goal
+"#" represents mountains;
+"S" represents Start;
+"G" represents Goal;
 ```
 .  .  .  .  .  .  .  .  .  .  
 ↓  ↓  ↓  ↓  ↓  .  .  .  .  .  
